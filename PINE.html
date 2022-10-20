@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GIS - PINE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">GIS</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Part ID Number Extraction</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Using machine learning and computer vision techniques to extract part numbers from printed circuit boards</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>For my master's program at RIT, I have decided to pursue a thesis (rather than a smaller capstone). With this in mind, I was looking for meaningful and innovative work to focus my thesis on. This opportunity presented itself at GIS, where our industry partner, CoreCentric, was looking for automated solutions to many of their factory processes.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>One aspect of the process flow that interested me greatly was identifying boards based on part numbers printed on labels. This is an interesting application of computer vision and machine learning, and so seemed satisfying professionally. Additionally, it massively reduces the load on human operators who are currently entering in part numbers by hand. This made it personally satisfying as well.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>First, I imaged boards and manually identified bounding boxes. Next, I naively trained a YOLO model on this new dataset. This was very successful. I then moved on to character recognition. Designing a set of pre-processing steps, I was able to use Tesseract to extract part numbers from the extracted labels. This was not as successful as the localization, as Tesseract is very sensitive to a number of different factors (detailed in the final report).</p>
+                            <img class="img-fluid rounded w-100" src="img/model_2_val_2.jpg" style="padding: 0px 0px 20px 0px;">
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>Running into diminishing returns with Tesseract, I decided to look into other options. As part of this search, I discovered that commercial options (such as Google's Natural Language API) can not only recognize localized text but can also localize that text. After some short experimentation, and the construction of a demo, it became clear that a custom solution would be unnecessary.</p>
+                            <img class="img-fluid rounded w-100" src="img/vision_api.png" style="padding: 0px 0px 20px 0px;">
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>While I was disappointed that the solution to this problem already exists, I am quite glad that the solution can be implemented so soon. This task is a horrible one to have to do manually, so automating it as soon as possible should be the priority. I am also quite proud of my solution, as it is not perfect but it does successfully locate labels, extract text, and identify boards. With this thesis idea no longer innovative enough (no need to re-invent the wheel), I have moved on to another of CoreCentric's manual processes – <a href="thesis.html">damage assessment of board components</a>. For more details on this project, see the final report linked below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-link">
+            <a href="documents/Independent_Study_Interim_Report.pdf" class="btn btn-outline-primary">View Final Report</a>
+        </div>
+    </div>
+    <!-- Qualification End -->
+    <a href="index.html#PINE"class="btn btn-outline-dark px-0 back-to-portfolio"><i class="fa fa-angle-double-left"></i></a>
+
+   <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

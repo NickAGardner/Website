@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thesis - Damage Assessment</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Thesis</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Damage Assessment</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Using machine learning and computer vision techniques to automate various forms of damage assessment</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>For my master's program at RIT, I have decided to pursue a thesis (rather than a smaller capstone). With this in mind, I was looking for meaningful and innovative work to focus my thesis on. This opportunity presented itself at GIS, where our industry partner, CoreCentric, was looking for automated solutions to many of their factory processes.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p><a href="PINE.html">After pursuing part number identification originally,</a> and finding that commercial solutions were able to accomplish this task already, I decided to move on to the harder task. I have already spent quite a bit of time designing and implementing a complete solution for assessing condition of LEDs on printed circuit boards. My new thesis direction will focus on various forms of damage assessment, including condition of LEDs, burns and cracks on boards, as well as damaged or missing components.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>As stated, my current work on this project has focused on LEDs. Originally, diodes were localized using U-Net. This was broadly successful, but required training on each new board, missed diodes occasionally, and misaligned bounding boxes frequently. Currently, a simple keypoint homography is used localize the diodes – this requires only one marked board per board type and is entirely consistent. New work for localization is focused on determining if YOLO can be used to localize diodes and generalize to new boards.</p>
+                            <img class="img-fluid rounded w-100" src="img/type_2_LED_assessment.png" style="padding: 0px 0px 20px 0px;">
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>For damage assessment, a custom CNN was implemented and trained on each LED type separately. For the shown board, the model is able to assess diode health with a greater than 95% accuracy on unseen diodes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+    <a href="index.html#thesis"class="btn btn-outline-dark px-0 back-to-portfolio"><i class="fa fa-angle-double-left"></i></a>
+
+   <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

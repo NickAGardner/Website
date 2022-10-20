@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nick Gardner - Software Engineer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Nick</span>Gardner</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#qualification" class="nav-item nav-link">Education and Experience</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/nick_headshot.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Nick Gardner</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Software Engineer, Machine Learning Engineer, Data Scientist</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="documents/resume.pdf" class="btn btn-outline-light">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">M.S. Computer Science</h5>
+                            <p class="mb-2"><strong>Rochester Institute of Technology</strong> | <small>2022 - 2023</small></p>
+                            <p><i class="fas fa-user-graduate"></i> GPA: 3.78</p>
+                            <p><i class="fas fa-laptop-code"></i> Intro to Machine Learning &middot Foundations of Networks &middot Independent Study (Thesis Work) &middot Advanced Computer Vision &middot Biologically-Inspired Intelligent Systems</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">B.S. Computer Science</h5>
+                            <p class="mb-2"><strong>Rochester Institute of Technology</strong> | <small>2018 - 2022</small></p>
+                            <p><i class="fas fa-user-graduate"></i> GPA: 3.78</p>
+                            <p><i class="fas fa-laptop-code"></i> Principles of Data Mining &middot Intro to Computer Vision &middot Intro to Artificial Intelligence &middot Programming Language Concepts &middot Analysis of Algorithms &middot Concepts of Parallel and Distributed Systems &middot Concepts of Computer Systems &middot Principles of Data Management &middot Intro to Software Engineering &middot Intro to Computer Science Theory &middot The Mechanics of Programming &middot Computer Science II &middot Computer Science I</p>
+                            <p><i class="fas fa-atom"></i> University Physics II &middot University Physics I &middot Abnormal Psychology &middot Honors Intro to Psychology &middot Language of Medicine &middot Contemporary Nutrition</p>
+                            <p><i class="fas fa-calculator"></i> Honors Linear Algebra &middot Probability and Statistics II &middot Probability and Statistics I &middot Discrete Math for Computing &middot Project-Based Calculus II &middot Exploration of Place and Space</p>
+                            <p><i class="fas fa-landmark"></i> Terrorism and Political Violence &middot Anarchy, Technology and Utopia &middot Principles of Microeconomics &middot The Rhetoric of Terrorism &middot Foundations of Moral Philosophy</p>
+                            <p><i class="fas fa-language"></i> Professional Communication &middot Beginning American Sign Language &middot First Year Writing Seminar &middot Literature, Culture, and Media</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Experience</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Machine Learning Engineer Co-op</h5>
+                            <p class="mb-2"><strong>Golisano Institute for Sustainability (GIS)</strong> | <small>August 2020 - Present</small></p>
+                            <ul>
+                                <li>Implemented a complete <a href="thesis.html">system for LED health assessment</a> from images of printed circuit boards, using OpenCV and PyTorch, that achieved over 95% accuracy on validation data.</li>
+                                <li>Designed machine learning models for <a href="gears.html">gear prognostic health monitoring</a> using PyTorch, Keras/Tensorflow, and Sklearn. Modeling achievements include accurate tracking of the progression of tooth damage with some small success in prediction as well.</li>
+                                <li>Created a system for localization and health assessment of CT scans of solder joints, using OpenCV and PyTorch.</li>
+                                <li>Designed and implemented a <a href="gears.html#genetic">genetic algorithm</a> to explore hyperparameter space for asymmetric auto encoders. This search algorithm, which was implemented in parallel to improve model training efficiency, more quickly converged to optimal values and allowed for analysis of broad model trends.</li>
+                                <li>Utilized software design principles to build and <a href="gears.html#toolbox">redesign internal libraries</a>.</li>
+                            </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Computational Software Algorithm Development Co-op</h5>
+                            <p class="mb-2"><strong>Spectral Sciences, Inc. (SSI)</strong> | <small>August 2021 - December 2021</small></p>
+                            <ul>
+                                <li>Researched and analyzed technical documentation to properly extract antiquated datasets.</li>
+                                <li>Designed and implemented <a href="SSI.html">data reader classes for atmospheric datasets.</a></li>
+                                <li>Created custom interpolation to combine multiple </li>
+                            </ul>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Data Analysis Intern</h5>
+                            <p class="mb-2"><strong>Scripps Institute of Oceanography (SIO)</strong> | <small>June 2018 - August 2018</small></p>
+                            <ul>
+                                <li>Implemented a <a href="Scripps.html">system for tracking and sharing oceanographic research efforts</a> using Kumu, Google Sheets, and Python's Google Sheets API. Added custom filters to mapping software to isolate desired subgroups.</li>
+                                <li>Created a web scraper to search through publisher's websites and find articles related to GO-SHIP cruises utilizing a machine learning element with sklearn.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Primary Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="150" class="center"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-5">
+                        <img src="img/sklearn.png" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <img src="img/matplotlib.png" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                    <div class="skill mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" width="150" class="center"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Personal</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">GIS</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">SSI</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fourth">SIO</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first second" id="thesis">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid-height-capped rounded w-100" src="img/LED_PCB.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="thesis.html">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" id="ESPN">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid-height-capped rounded w-100" src="img/fantasy_football.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="ESPN.html">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="PINE">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid-height-capped rounded w-100" src="img/model_2_val_1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="PINE.html">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third" id="SSI">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid-height-capped rounded w-100" src="img/atmosphere.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="SSI.html">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second" id="gears">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid-height-capped rounded w-100" src="img/helicopter.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="gears.html">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first" id="Wegmans">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid-height-capped rounded w-100" src="img/Wegmans_logo.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="Wegmans.html">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth" id="Scripps">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid-height-capped rounded w-100" src="img/scripps.jpeg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="Scripps.html">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/NickAGardner"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/nicholasgardnerrit/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="mailto:nag6650@rit.edu"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">nickgardner.us</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

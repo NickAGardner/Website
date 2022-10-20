@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ESPN Free Agent Automation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Fantasy</h1>
+                <h1 class="position-absolute text-uppercase text-primary">ESPN Free Agent Automation</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">I am a little obsessed with fantasy football...</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>My obsession began when I first tried fantasy football as part of my office's fantasy football league in August of 2021. I had been a pretty avid Chargers fan as a child (I grew up in San Diego), but my fervor had decreased over the years, especially after the Chargers abandonded San Diego. But with the office league, a new opportunity to enjoy football appeared.</p>
+                            <img class="img-fluid rounded w-100" src="img/waiver_player.png" style="padding: 0px 0px 20px 0px;">
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>In my first league, your waiver position (when you get to claim recently played or dropped players) was entirely based on when you last claimed someone off waivers. Because of this, I frequently found myself getting up quite early the morning that waivers cleared to grab free agents immediately after waivers so I could preserve my waiver spot. It dawned on me at some point that this was pretty silly to be losing sleep over. Some might have decided to just not worry about it. But like any good programmer, I decided to write a little program to do it for me. </p>
+                            <img class="img-fluid rounded w-100" src="img/free_agent_text_interface.png" style="padding: 0px 0px 20px 0px;">
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>So I implemented a very basic program in Python that uses the ESPN API, to query to determine if the player is a free agent yet, and Selenium (testing software), to make the transaction by logging into a web browser. My progress on this project has slowed recently, because I realized that my league this year is structured so that waiver position is reset every week based on performance, meaning that there is no major advantage to preserving waiver position through free agent pickups. This was somewhat disappointing to learn, but this is probably the healthier way to conduct fantasy football. Despite this, I finished this tool so that others (whose leagues are structured differently) can use it.</p>
+                            <img class="img-fluid rounded w-100" src="img/chrome_add_player.png" style="padding: 0px 0px 20px 0px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-link">
+            <a href="https://github.com/NickAGardner/ESPN-Fantasy-Football-Free-Agent-Automation" class="btn btn-outline-primary">View on Github</a>
+        </div>
+    </div>
+    <!-- Qualification End -->
+    <a href="index.html#ESPN"class="btn btn-outline-dark px-0 back-to-portfolio"><i class="fa fa-angle-double-left"></i></a>
+
+   <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
