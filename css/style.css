@@ -6379,6 +6379,32 @@ a.close.disabled {
   background-color: #0BCEAF !important;
 }
 
+.bg-border-primary {
+  border:5px solid #0BCEAF;
+  height: 300px;
+}
+
+.project-header-text {
+  text-align: center;
+  color: #0BCEAF
+}
+
+.project-text {
+  padding-left: 10px;
+}
+
+.project-icon {
+  color: #0BCEAF;
+  align-items: center;
+  position: relative;
+  width: 0;
+  height: 0;
+  left: 50%;
+  border-radius: 4px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
