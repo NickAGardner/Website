@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gym Tracker</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Recreation</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Gym Data Tracker and Predictor</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">This one is for you, Andrew</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>The idea for this was inspired by a friend, who created an awesome application for tracking gym occupancy at RIT's gym. Naturally, I have decided to replicate this effort and one-up him as any friend should. My version scrapes for current gym data and stores this data as a historical record, and also will incorporate a simple machine learning element to predict future occupancy based on historical data and current trends.</p>
+                            <iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plotly.com/~nickgardner7777/20.embed"></iframe>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>To accomplish this, I decided to explore some technologies that I have not utilized before. But first, I used an old friend, BeautifulSoup, to design the scraper to find the relevant information on RIT's <a href="https://recreation.rit.edu/facilityoccupancy">website</a>. Next, I used Google Cloud Run to automate the repeated scraping necessary to build and maintain a database. To store the scraping results, I created a Google Firebase NoSQL database. To display the results, I used Plotly, allowing me to easily share and embed the resulting graph online.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p>I have quite a bit of cleaning up required to make this plot usable. I am going to include a daily, weekly, monthly, and yearly setting for the plot to allow the user to view the data at the scale that they are interested in. Additionally, I am going to incorporate a machine learning element to do prediction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-link">
+            <a href="https://github.com/nickagardner/GymTracker" class="btn btn-outline-primary">View on Github</a>
+        </div>
+    </div>
+    <!-- Qualification End -->
+    <a href="index.html#ESPN"class="btn btn-outline-dark px-0 back-to-portfolio"><i class="fa fa-angle-double-left"></i></a>
+
+   <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
