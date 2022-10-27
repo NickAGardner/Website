@@ -44,11 +44,11 @@
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <p>To accomplish this, I decided to explore some technologies that I have not utilized before. But first, I used an old friend, BeautifulSoup, to design the scraper to find the relevant information on RIT's <a href="https://recreation.rit.edu/facilityoccupancy">website</a>. Next, I used Google Cloud Run to automate the repeated scraping necessary to build and maintain a database. To store the scraping results, I created a Google Firebase NoSQL database. To display the results, I used Plotly, allowing me to easily share and embed the resulting graph online.</p>
+                            <p>To create this application, I first used an old friend, BeautifulSoup, to build the scraper to find the relevant information on RIT's <a href="https://recreation.rit.edu/facilityoccupancy">website</a>. Next, I used Google Cloud Run to automate the repeated scraping necessary to build and maintain a database. To store the scraping results, I created a Google Firebase NoSQL database that stores counts and datetimes. To display the results, I created a flask app using plotly dash. This app is hosted with Heroku and periodically queries the database for current and historical gym occupancy data. Both the scraper and the renderer are automatically updated with continuous integration.</p>
                         </div>
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <p>I have quite a bit of cleaning up required to make this plot usable. I am going to include a daily, weekly, monthly, and yearly setting for the plot to allow the user to view the data at the scale that they are interested in. Additionally, I am going to incorporate a machine learning element to do prediction.</p>
+                            <p>In the future for this project, I am going to include a monthly and yearly setting for the plot to allow the user to view the data at the scale that they are interested in. Additionally, I am going to incorporate a machine learning element to do prediction.</p>
                         </div>
                     </div>
                 </div>
