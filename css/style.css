@@ -5832,6 +5832,8 @@ a.close.disabled {
   margin: auto;
   width: 20%;
   padding-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .modal-scrollbar-measure {
@@ -6959,6 +6961,12 @@ button.bg-dark:focus {
 
 .align-items-center {
   align-items: center !important;
+}
+
+.align-items-center-para {
+  align-items: center !important;
+  display: flex;
+  justify-content: center;
 }
 
 .align-items-baseline {
