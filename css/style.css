@@ -877,6 +877,11 @@ pre code {
   margin-left: 91.66667%;
 }
 
+.bg-border-primary {
+  border:5px solid #0BCEAF;
+  height: 275px;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     flex-basis: 0;
@@ -962,7 +967,7 @@ pre code {
   }
   .bg-border-primary {
     border:5px solid #0BCEAF;
-    height: 300px;
+    height: 250px;
   }
   .order-sm-first {
     order: -1;
