@@ -44,38 +44,7 @@
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <p>In February of 2020, I participated in the annual hackathon at RIT, Brickhack 6! This event was a ton of fun and I am proud of what my team and I were able to throw together in 24 straight-ish hours. </p>
                         </div>
-                        <!-- <script>
-                            var data = [{
-                            type:'scattermapbox',
-                            lat:['45.5017'],
-                            lon:['-73.5673'],
-                            mode:'markers',
-                            marker: {
-                                size:14
-                            },
-                            text:['Montreal']
-                            }]
-
-                            var layout = {
-                            autosize: true,
-                            hovermode:'closest',
-                            mapbox: {
-                                bearing:0,
-                                center: {
-                                lat:45,
-                                lon:-73
-                                },
-                                pitch:0,
-                                zoom:5
-                            },
-                            }
-
-                            Plotly.setPlotConfig({
-                            mapboxAccessToken: process.env.secrets.mapbox
-                            })
-
-                            Plotly.newPlot('myDiv', data, layout)
-                        </script> -->
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
@@ -88,6 +57,38 @@
     <a href="index.html#Wegmans"class="btn btn-outline-dark px-0 back-to-portfolio"><i class="fa fa-angle-double-left"></i></a>
 
    <!-- JavaScript Libraries -->
+    <script>
+        var data = [{
+        type:'scattermapbox',
+        lat:['45.5017'],
+        lon:['-73.5673'],
+        mode:'markers',
+        marker: {
+            size:14
+        },
+        text:['Montreal']
+        }]
+
+        var layout = {
+        autosize: true,
+        hovermode:'closest',
+        mapbox: {
+            bearing:0,
+            center: {
+            lat:45,
+            lon:-73
+            },
+            pitch:0,
+            zoom:5
+        },
+        }
+
+        Plotly.setPlotConfig({
+        mapboxAccessToken: "pk.eyJ1Ijoibmlja2dhcmRuZXIiLCJhIjoiY2xva2lucXR1MTVmcDJycW81Zm1hdDcyZiJ9.2E9qYj-2dRzLTW2ZHW4Y3Q"
+        })
+
+        Plotly.newPlot('map', data, layout)
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
