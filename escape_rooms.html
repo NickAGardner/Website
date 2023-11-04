@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Wegmans Recipe Helper</title>
+    <title>Escape Rooms</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -33,20 +33,412 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Hackathon</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Wegmans Recipe Helper</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Puzzles</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Escape Rooms</h1>
             </div>
             <div class="row align-items-center-para">
                 <div class="col-lg-6">
-                    <h3 class="mb-4">2 hours of sleep is definitely worse than no sleep...</h3>
+                    <h3 class="mb-4">In no escape room I have done so far has it yet been necessary to plug a copper wire into a wall socket.</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <p>In February of 2020, I participated in the annual hackathon at RIT, Brickhack 6! This event was a ton of fun and I am proud of what my team and I were able to throw together in 24 straight-ish hours. </p>
+                            <p>I was inspired by a friend of mine, Abi, to try escape rooms in early 2021. Since then, I have been doing as many as I can because they are a blast! Listed below is a chronicle of all of the escape rooms I have done.</p>
                         </div>
                         <div id="map"></div>
+                        <table id="escape-table" class="table table-bordered table-hover table-condensed">
+                            <thead><tr>
+                            <th title="Venue">Venue</th>
+                            <th title="Room">Room</th>
+                            <th title="Date">Date</th>
+                            <th title="Location">Location</th>
+                            <th hidden title="Latitude">Latitude</th>
+                            <th hidden title="Longitude">Longitude</th>
+                            <th title="Unit Price">Unit Price</th>
+                            <th title="Participants">Participants</th>
+                            <th title="Challenge">Challenge</th>
+                            <th title="Success">Success</th>
+                            <th title="Rating">Rating</th>
+                            </tr></thead>
+                            <tbody><tr>
+                            <td>Escape the Room Boston</td>
+                            <td>The Clocktower</td>
+                            <td>10/3/21</td>
+                            <td>33 WEST ST, 3RD FLOOR, BOSTON, MA 02111</td>
+                            <td hidden>42.355444429297236</td>
+                            <td hidden>-71.06247611357335</td>
+                            <td align="right">36</td>
+                            <td align="right">2</td>
+                            <td align="right">5</td>
+                            <td align="right">0</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            <td>Boxaroo</td>
+                            <td>Mystery of the Magician's Study</td>
+                            <td>10/10/21</td>
+                            <td>55 Court Street, Boston, MA 02108</td>
+                            <td hidden>42.36023299414538</td>
+                            <td hidden>-71.05882830964886</td>
+                            <td align="right">40</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">5</td>
+                            </tr>
+                            <tr>
+                            <td>Boxaroo</td>
+                            <td>Conundrum Museum</td>
+                            <td>11/7/21</td>
+                            <td>55 Court Street, Boston, MA 02108</td>
+                            <td hidden>42.36023299414538</td>
+                            <td hidden>-71.05882830964886</td>
+                            <td align="right">40</td>
+                            <td align="right">2</td>
+                            <td align="right">5</td>
+                            <td align="right">0</td>
+                            <td align="right">5</td>
+                            </tr>
+                            <tr>
+                            <td>Breakout Games</td>
+                            <td>Operation: Casino</td>
+                            <td>11/14/21</td>
+                            <td>00 Tradecenter Dr Suite 680, Woburn, MA 01801</td>
+                            <td hidden>42.50146447365179</td>
+                            <td hidden>-71.1624575</td>
+                            <td align="right">39.84</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">0</td>
+                            <td align="right">2</td>
+                            </tr>
+                            <tr>
+                            <td>Room Escape Boston</td>
+                            <td>Boom Room</td>
+                            <td>12/11/21</td>
+                            <td>121 Webster Ave, Chelsea, Massachusetts 02150</td>
+                            <td hidden>42.41374495129696</td>
+                            <td hidden>-71.02137294158966</td>
+                            <td align="right">30</td>
+                            <td align="right">2</td>
+                            <td align="right">2</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Boxaroo</td>
+                            <td>Storyteller&#39;s Secret</td>
+                            <td>12/17/21</td>
+                            <td>55 Court Street, Boston, MA 02108</td>
+                            <td hidden>42.36023299414538</td>
+                            <td hidden>-71.05882830964886</td>
+                            <td align="right">47</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">5</td>
+                            </tr>
+                            <tr>
+                            <td>Escape the Room Boston</td>
+                            <td>The Apartment</td>
+                            <td>12/20/21</td>
+                            <td>33 WEST ST, 3RD FLOOR, BOSTON, MA 02111</td>
+                            <td hidden>42.355444429297236</td>
+                            <td hidden>-71.06247611357335</td>
+                            <td align="right">36</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">2</td>
+                            </tr>
+                            <tr>
+                            <td>The Unlockables Escape Rooms</td>
+                            <td>The Informant</td>
+                            <td>12/29/21</td>
+                            <td>7380 Clairemont Mesa Blvd - Suite 205 San Diego, CA 92111</td>
+                            <td hidden>32.85406653993917</td>
+                            <td hidden>-117.15882942326118</td>
+                            <td align="right">35</td>
+                            <td align="right">4</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">4</td>
+                            </tr>
+                            <tr>
+                            <td>Exit Game</td>
+                            <td>Artificial Intelligence</td>
+                            <td>3/9/22</td>
+                            <td>8222 Ronson Rd., San Diego, California 92111</td>
+                            <td hidden>32.83025758343733</td>
+                            <td hidden>-117.1464763480335</td>
+                            <td align="right">43.75</td>
+                            <td align="right">4</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">5</td>
+                            </tr>
+                            <tr>
+                            <td>Red Door Escape Room</td>
+                            <td>Fair Game</td>
+                            <td>3/11/22</td>
+                            <td>7007 Friars Road, suite 212, San Diego, CA, 92108</td>
+                            <td hidden>32.767696281033274</td>
+                            <td hidden>-117.16853043272145</td>
+                            <td align="right">42.23</td>
+                            <td align="right">2</td>
+                            <td align="right">4</td>
+                            <td align="right">0</td>
+                            <td align="right">4</td>
+                            </tr>
+                            <tr>
+                            <td>PanIQ Escape Room</td>
+                            <td>Atlantis Rising</td>
+                            <td>6/18/22</td>
+                            <td>130 Water St,Boston, MA 02109</td>
+                            <td hidden>42.358885042435574</td>
+                            <td hidden>-71.05486563513054</td>
+                            <td align="right">49.47</td>
+                            <td align="right">2</td>
+                            <td align="right">4</td>
+                            <td align="right">0</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            <td>Room Escapers Boston</td>
+                            <td>Panacea</td>
+                            <td>6/19/22</td>
+                            <td>3 School St, Historic Old Corner Bookstore, Boston, MA, 02108</td>
+                            <td hidden>42.357749666843006</td>
+                            <td hidden>-71.05838952698957</td>
+                            <td align="right">45</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">4</td>
+                            </tr>
+                            <tr>
+                            <td>Nut House Escape Rooms</td>
+                            <td>Cabin in The Woods</td>
+                            <td>9/9/22</td>
+                            <td>1280 Scottsville rd, Suite 40-50, Rochester, New York</td>
+                            <td hidden>43.11649149844484</td>
+                            <td hidden>-77.66080876931942</td>
+                            <td align="right">35.63</td>
+                            <td align="right">3</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            <td>Omega Escape Room</td>
+                            <td>Billy&#39;s Nightmare</td>
+                            <td>9/16/22</td>
+                            <td>80 Rockwood Pl Suite 108, Rochester, NY 14610</td>
+                            <td hidden>43.14498109680264</td>
+                            <td hidden>-77.54677924262701</td>
+                            <td align="right">32.82</td>
+                            <td align="right">4</td>
+                            <td align="right">2</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            <td>Lock and Key Escape Room</td>
+                            <td>The Grimm Forest</td>
+                            <td>9/30/22</td>
+                            <td>504 Elmwood Avenue Lower Front Suite, Buffalo, New York 14222</td>
+                            <td hidden>42.911562865630955</td>
+                            <td hidden>-78.87743115810518</td>
+                            <td align="right">30.45</td>
+                            <td align="right">3</td>
+                            <td align="right">4</td>
+                            <td align="right">0</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            <td>The Great Escape Room</td>
+                            <td>Infirmary: Surgical Crisis</td>
+                            <td>11/4/22</td>
+                            <td>1150 University Ave Bldg 5, Suite 12A, Rochester, NY 14607</td>
+                            <td hidden>43.15399470740773</td>
+                            <td hidden>-77.57181324262152</td>
+                            <td align="right">35</td>
+                            <td align="right">4</td>
+                            <td align="right">4</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Adventure Rooms Canada</td>
+                            <td>Stool Pigeon</td>
+                            <td>11/5/22</td>
+                            <td>283 Duke St. W, Kitchener, ON Kitchener, ON N2H 3X7</td>
+                            <td hidden>43.45548384668141</td>
+                            <td hidden>-80.49721434244216</td>
+                            <td align="right">30.5</td>
+                            <td align="right">2</td>
+                            <td align="right">5</td>
+                            <td align="right">0</td>
+                            <td align="right">2</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Niagara Escapement</td>
+                            <td>Easy Bake Coven</td>
+                            <td>1/16/23</td>
+                            <td>5001 Victoria Ave, Niagara Falls, ON L2E 4C9, Canada</td>
+                            <td hidden>43.102529484626935</td>
+                            <td hidden>-79.07317675061023</td>
+                            <td align="right">30</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">4</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Niagara Escapement</td>
+                            <td>Honeymoon Suite</td>
+                            <td>1/16/23</td>
+                            <td>5001 Victoria Ave, Niagara Falls, ON L2E 4C9, Canada</td>
+                            <td hidden>43.102529484626935</td>
+                            <td hidden>-79.07317675061023</td>
+                            <td align="right">30</td>
+                            <td align="right">2</td>
+                            <td align="right">4</td>
+                            <td align="right">1</td>
+                            <td align="right">4</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Niagara Escapement</td>
+                            <td>End of the World</td>
+                            <td>1/16/23</td>
+                            <td>5001 Victoria Ave, Niagara Falls, ON L2E 4C9, Canada</td>
+                            <td hidden>43.102529484626935</td>
+                            <td hidden>-79.07317675061023</td>
+                            <td align="right">30</td>
+                            <td align="right">2</td>
+                            <td align="right">5</td>
+                            <td align="right">1</td>
+                            <td align="right">4</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Locked: A Rochester Escape Room</td>
+                            <td>White Lady&#39;s Castle</td>
+                            <td>4/23/23</td>
+                            <td>200 Buell Rd. Suite A-8, Rochester, NY</td>
+                            <td hidden>43.13600620627663</td>
+                            <td hidden>-77.66520258127079</td>
+                            <td align="right">29.7</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>GTFO Escape Rooms</td>
+                            <td>Escape the 90&#39;s</td>
+                            <td>5/12/23</td>
+                            <td>120 East Ave Suite 200, Rochester, New York 14604</td>
+                            <td hidden>43.15775426503019</td>
+                            <td hidden>-77.60091946591784</td>
+                            <td align="right">34.56</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Maine Escape Games</td>
+                            <td>Alien Invasion</td>
+                            <td>7/29/23</td>
+                            <td>125 John Roberts Rd Suite 8, South Portland, Maine 04106</td>
+                            <td hidden>43.62996060430099</td>
+                            <td hidden>-70.32870312699751</td>
+                            <td align="right">52.5</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Upside Down Escape Games</td>
+                            <td>Baggage Bandits</td>
+                            <td>8/13/23</td>
+                            <td>61 Market St, Mashpee, MA 02649</td>
+                            <td hidden>41.61608506128727</td>
+                            <td hidden>-70.49218112817793</td>
+                            <td align="right">37.5</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Upside Down Escape Games</td>
+                            <td>Pirates of the Cape</td>
+                            <td>8/20/23</td>
+                            <td>61 Market St, Mashpee, MA 02649</td>
+                            <td hidden>41.61608506128727</td>
+                            <td hidden>-70.49218112817793</td>
+                            <td align="right">37.5</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>Escape Rhode Island</td>
+                            <td>The Speakeasy</td>
+                            <td>10/7/23</td>
+                            <td>385 S MAIN STREET, PROVIDENCE, RHODE ISLAND</td>
+                            <td hidden>41.821635301951325</td>
+                            <td hidden>-71.40412978942098</td>
+                            <td align="right">40</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">4</td>
+                            </tr>
+                            <tr>
+                            
+                            <td>PanIQ Escape Room</td>
+                            <td>The Red Wire</td>
+                            <td>10/28/23</td>
+                            <td>130 Water St,Boston, MA 02109</td>
+                            <td hidden>42.358885042435574</td>
+                            <td hidden>-71.05486563513054</td>
+                            <td align="right">54.82</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">1</td>
+                            <td align="right">3</td>
+                            </tr>
+                            </tbody></table>
+                            
+                            <table id="escape-summary" class="table table-bordered table-hover table-condensed">
+                                <thead><tr>
+                                <th title="Total Rooms">Total Rooms</th>
+                                <th title="Success Rate">Success Rate</th>
+                                <th title="Total Spent">Total Spent</th>
+                                </tr></thead>
+                                <tbody><tr>
+                                <td id="total-rooms" align="right"></td>
+                                <td id="success-rate" align="right"></td>
+                                <td id="total-spent" align="right"></td>
+                                </tr>
+                                </tbody></table>
                     </div>
                 </div>
+                
             </div>
         </div>
         <div class="center-link">
@@ -58,15 +450,46 @@
 
    <!-- JavaScript Libraries -->
     <script>
+        const table = document.getElementById("escape-table"); // get the table
+        let rows = Array.from(table.rows); // get the <tr> elements inside it and convert it to an array
+        rows.shift() // remove the first row (headers)
+        let cells = rows.map(row => Array.from(row.cells).map(cell => cell.textContent)); // gets a 2d list of cells. you could use innerHTML or innerText instead of textContent.
+        
+        let lats = cells.map(x => x[4]);
+        let lat_jitter = lats.map(x => Math.random() * 0.0001 - 0.00005);
+        lats = lats.map((x, i) => Number(x) + lat_jitter[i]);
+        let lat_average = lats.map(Number).reduce((a, b) => a + b) / lats.length;
+        let lons = cells.map(x => x[5]);
+        let lon_jitter = lons.map(x => Math.random() * 0.0001 - 0.00005);
+        lons = lons.map((x, i) => Number(x) + lon_jitter[i]);
+        let lon_average = lons.map(Number).reduce((a, b) => a + b) / lons.length;
+
+        let dates = cells.map(x => x[2]);
+        let colors = dates.map(date => new Date(date).getTime())
+        let color_vals = [Math.min(...colors), Math.max(...colors)];
+        let color_names = [dates[0], dates[dates.length - 1]];
+
         var data = [{
         type:'scattermapbox',
-        lat:['45.5017'],
-        lon:['-73.5673'],
+        lat: lats,
+        lon: lons,
         mode:'markers',
         marker: {
-            size:14
+            color: colors,
+            colorscale: 'Hot',
+            size:5,
+            opacity: 1,
+            colorbar:{
+            'tickvals': color_vals,
+            'ticktext': color_names,
+            thickness: 10,
+            titleside: 'right',
+            outlinecolor: 'rgba(68,68,68,0)',
+            ticks: 'outside',
+            dtick: 0.1
+          }
         },
-        text:['Montreal']
+        text: cells.map(x => x[1] + " - " + x[0] + " - " + x[2])
         }]
 
         var layout = {
@@ -75,11 +498,11 @@
         mapbox: {
             bearing:0,
             center: {
-            lat:45,
-            lon:-73
+            lat: lat_average,
+            lon: lon_average,
             },
             pitch:0,
-            zoom:5
+            zoom:2
         },
         }
 
@@ -88,6 +511,15 @@
         })
 
         Plotly.newPlot('map', data, layout)
+
+        let total_rooms = cells.length;
+        let prices = cells.map(x => Number(x[6]));
+        let participants = cells.map(x => Number(x[7]));
+        let total_spent = prices.map((x, i) => x * participants[i]).reduce((a, b) => a + b);
+        let success_rate = cells.map(x => Number(x[9])).reduce((a, b) => a + b) / total_rooms;
+        document.getElementById("total-rooms").innerHTML = total_rooms;
+        document.getElementById("total-spent").innerHTML = "$" + total_spent;
+        document.getElementById("success-rate").innerHTML = (success_rate * 100).toFixed(2) + "%";
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
