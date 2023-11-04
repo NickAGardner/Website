@@ -485,7 +485,7 @@
             dtick: 0.1
           }
         },
-        text: cells.map(x => x[1] + " - " + x[0] + " - " + x[2])
+        text: cells.map(x => x[1] + " | " + x[0] + " | " + x[2] + "<br>" + "$" + x[6]*x[7] + " | " + x[7] + " people | Challenge: " + x[8] + " | Success: " + x[9] + " | " + "Rating: " + x[10])
         }]
 
         var layout = {
