@@ -465,9 +465,6 @@
         let color_vals = [Math.min(...colors), Math.max(...colors)];
         let color_names = [dates[0], dates[dates.length - 1]];
 
-        var x = Array.from({length: 500}, () => Math.random()*(6-3)+3);
-var y = Array.from({length: 500}, () => Math.random()*(6-3)+3);
-
         var data = [{
         type:'scattermapbox',
         lat: lats,
@@ -475,7 +472,18 @@ var y = Array.from({length: 500}, () => Math.random()*(6-3)+3);
         mode:'markers',
         marker: {
             color: colors,
-            colorscale: 'Hot',
+            colorscale: [
+                ['0.0', 'rgb(68, 1, 84)'],
+                ['0.111111111111', 'rgb(72, 40, 120)'],
+                ['0.222222222222', 'rgb(62, 73, 137)'],
+                ['0.333333333333', 'rgb(49, 104, 142)'],
+                ['0.444444444444', 'rgb(38, 130, 142)'],
+                ['0.555555555556', 'rgb(31, 158, 137)'],
+                ['0.666666666667', 'rgb(53, 183, 121)'],
+                ['0.777777777778', 'rgb(110, 206, 88)'],
+                ['0.888888888889', 'rgb(181, 222, 43)'],
+                ['1.0', 'rgb(253, 231, 37)']
+            ],
             size:6,
             opacity: 1,
             colorbar:{
