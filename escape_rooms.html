@@ -465,6 +465,9 @@
         let color_vals = [Math.min(...colors), Math.max(...colors)];
         let color_names = [dates[0], dates[dates.length - 1]];
 
+        var x = Array.from({length: 500}, () => Math.random()*(6-3)+3);
+var y = Array.from({length: 500}, () => Math.random()*(6-3)+3);
+
         var data = [{
         type:'scattermapbox',
         lat: lats,
@@ -473,22 +476,24 @@
         marker: {
             color: colors,
             colorscale: 'Hot',
-            size:5,
+            size:6,
             opacity: 1,
             colorbar:{
-            'tickvals': color_vals,
-            'ticktext': color_names,
-            thickness: 10,
-            titleside: 'right',
-            outlinecolor: 'rgba(68,68,68,0)',
-            ticks: 'outside',
-            dtick: 0.1
-          }
+                'tickvals': color_vals,
+                'ticktext': color_names,
+                thickness: 30,
+                titleside: 'right',
+                outlinecolor: 'rgba(68,68,68,0)',
+                ticks: 'outside',
+                dtick: 0.1,
+                title: 'Date'
+            }
         },
         text: cells.map(x => x[1] + " | " + x[0] + " | " + x[2] + "<br>" + "$" + x[6]*x[7] + " | " + x[7] + " people | Challenge: " + x[8] + " | Success: " + x[9] + " | " + "Rating: " + x[10])
         }]
 
         var layout = {
+        title: 'Completed Escape Rooms: Interactive Map',
         autosize: true,
         hovermode:'closest',
         mapbox: {
