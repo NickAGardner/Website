@@ -26,6 +26,15 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.slim.js"
+  integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+  
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -529,6 +538,10 @@
         document.getElementById("total-rooms").innerHTML = total_rooms;
         document.getElementById("total-spent").innerHTML = "$" + total_spent;
         document.getElementById("success-rate").innerHTML = (success_rate * 100).toFixed(2) + "%";
+
+        $('#escape-table').DataTable({paging: false, 
+                                      "order": [],
+                                      columnDefs: [ { type: 'date', 'targets': [2] } ],});
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -538,10 +551,6 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
