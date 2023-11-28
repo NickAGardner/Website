@@ -27,9 +27,7 @@
 
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" 
-    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"/>
   
@@ -469,95 +467,111 @@
 
    <!-- JavaScript Libraries -->
     <script>
-        const table = document.getElementById("escape-table"); // get the table
-        let rows = Array.from(table.rows); // get the <tr> elements inside it and convert it to an array
-        rows.shift() // remove the first row (headers)
-        let cells = rows.map(row => Array.from(row.cells).map(cell => cell.textContent)); // gets a 2d list of cells. you could use innerHTML or innerText instead of textContent.
-        
-        let lats = cells.map(x => x[4]);
-        let lat_jitter = lats.map(x => Math.random() * 0.0001 - 0.00005);
-        lats = lats.map((x, i) => Number(x) + lat_jitter[i]);
-        let lat_average = lats.map(Number).reduce((a, b) => a + b) / lats.length;
-        let lons = cells.map(x => x[5]);
-        let lon_jitter = lons.map(x => Math.random() * 0.0001 - 0.00005);
-        lons = lons.map((x, i) => Number(x) + lon_jitter[i]);
-        let lon_average = lons.map(Number).reduce((a, b) => a + b) / lons.length;
+        function plot_rooms() {
+            const table = document.getElementById("escape-table"); // get the table
+            let rows = Array.from(table.rows); // get the <tr> elements inside it and convert it to an array
+            rows.shift() // remove the first row (headers)
+            let cells = rows.map(row => Array.from(row.cells).map(cell => cell.textContent)); // gets a 2d list of cells. you could use innerHTML or innerText instead of textContent.
+            
+            let lats = cells.map(x => x[4]);
+            let lat_jitter = lats.map(x => Math.random() * 0.0001 - 0.00005);
+            lats = lats.map((x, i) => Number(x) + lat_jitter[i]);
+            let lat_max = Math.max(...lats);
+            let lat_min = Math.min(...lats);
+            let lat_average = (lat_max + lat_min) / 2;
+            let lons = cells.map(x => x[5]);
+            let lon_jitter = lons.map(x => Math.random() * 0.0001 - 0.00005);
+            lons = lons.map((x, i) => Number(x) + lon_jitter[i]);
+            let lon_min = Math.min(...lons);
+            let lon_max = Math.max(...lons);
+            let lon_average = (lon_max + lon_min) / 2;
 
-        let dates = cells.map(x => x[2]);
-        let colors = dates.map(date => new Date(date).getTime())
-        let color_vals = [Math.min(...colors), Math.max(...colors)];
-        let color_names = [dates[0], dates[dates.length - 1]];
+            let dates = cells.map(x => x[2]);
+            let colors = dates.map(date => new Date(date).getTime())
+            let color_vals = [Math.min(...colors), Math.max(...colors)];
+            let color_names = [dates[0], dates[dates.length - 1]];
 
-        var data = [{
-        type:'scattermapbox',
-        lat: lats,
-        lon: lons,
-        mode:'markers',
-        marker: {
-            color: colors,
-            colorscale: [
-                ['0.0', 'rgb(13, 8, 135)'],
-                ['0.111111111111', 'rgb(70, 3, 159)'],
-                ['0.222222222222', 'rgb(114, 1, 168)'],
-                ['0.333333333333', 'rgb(156, 23, 158))'],
-                ['0.444444444444', 'rgb(189, 55, 134)'],
-                ['0.555555555556', 'rgb(216, 87, 107)'],
-                ['0.666666666667', 'rgb(237, 121, 83)'],
-                ['0.777777777778', 'rgb(251, 159, 58)'],
-                ['0.888888888889', 'rgb(253, 202, 38)'],
-                ['1.0', 'rgb(240, 249, 33)']
-            ],
-            size:6,
-            opacity: 1,
-            colorbar:{
-                'tickvals': color_vals,
-                'ticktext': color_names,
-                thickness: 30,
-                titleside: 'right',
-                outlinecolor: 'rgba(68,68,68,0)',
-                ticks: 'outside',
-                dtick: 0.1,
-                title: 'Date'
-            }
-        },
-        text: cells.map(x => x[1] + " | " + x[0] + " | " + x[2] + "<br>" + "$" + x[6]*x[7] + " | " + x[7] + " people | Challenge: " + x[8] + " | Success: " + x[9] + " | " + "Rating: " + x[10])
-        }]
-
-        var layout = {
-        title: 'Completed Escape Rooms: Interactive Map',
-        autosize: true,
-        hovermode:'closest',
-        mapbox: {
-            bearing:0,
-            center: {
-            lat: lat_average,
-            lon: lon_average,
+            var data = [{
+            type:'scattermapbox',
+            lat: lats,
+            lon: lons,
+            mode:'markers',
+            marker: {
+                color: colors,
+                colorscale: [
+                    ['0.0', 'rgb(13, 8, 135)'],
+                    ['0.111111111111', 'rgb(70, 3, 159)'],
+                    ['0.222222222222', 'rgb(114, 1, 168)'],
+                    ['0.333333333333', 'rgb(156, 23, 158))'],
+                    ['0.444444444444', 'rgb(189, 55, 134)'],
+                    ['0.555555555556', 'rgb(216, 87, 107)'],
+                    ['0.666666666667', 'rgb(237, 121, 83)'],
+                    ['0.777777777778', 'rgb(251, 159, 58)'],
+                    ['0.888888888889', 'rgb(253, 202, 38)'],
+                    ['1.0', 'rgb(240, 249, 33)']
+                ],
+                size:6,
+                opacity: 1,
+                colorbar:{
+                    'tickvals': color_vals,
+                    'ticktext': color_names,
+                    thickness: 30,
+                    titleside: 'right',
+                    outlinecolor: 'rgba(68,68,68,0)',
+                    ticks: 'outside',
+                    dtick: 0.1,
+                    title: 'Date'
+                }
             },
-            pitch:0,
-            zoom:2
-        },
-        }
+            text: cells.map(x => x[1] + " | " + x[0] + " | " + x[2] + "<br>" + "$" + x[6]*x[7] + " | " + x[7] + " people | Challenge: " + x[8] + " | Success: " + x[9] + " | " + "Rating: " + x[10])
+            }]
+
+            let max_bound = Math.max(Math.abs(lat_min-lat_max), Math.abs(lon_min-lon_max)) * 111
+            let zoom = 13.5 - Math.log2(max_bound)
+
+            var layout = {
+            title: 'Completed Escape Rooms: Interactive Map',
+            autosize: true,
+            hovermode:'closest',
+            mapbox: {
+                bearing:0,
+                center: {
+                lat: lat_average,
+                lon: lon_average,
+                },
+                pitch:0,
+                zoom:zoom
+            },
+            }
+
+            Plotly.newPlot('map', data, layout)
+
+            let total_rooms = cells.length;
+            let prices = cells.map(x => Number(x[6]));
+            let participants = cells.map(x => Number(x[7]));
+            let total_spent = prices.map((x, i) => x * participants[i]).reduce((a, b) => a + b);
+            let success_rate = cells.map(x => Number(x[9])).reduce((a, b) => a + b) / total_rooms;
+            document.getElementById("total-rooms").innerHTML = total_rooms;
+            document.getElementById("total-spent").innerHTML = "$" + total_spent;
+            document.getElementById("success-rate").innerHTML = (success_rate * 100).toFixed(2) + "%";
+        };
 
         Plotly.setPlotConfig({
         mapboxAccessToken: "pk.eyJ1Ijoibmlja2dhcmRuZXIiLCJhIjoiY2xva2lucXR1MTVmcDJycW81Zm1hdDcyZiJ9.2E9qYj-2dRzLTW2ZHW4Y3Q"
-        })
-
-        Plotly.newPlot('map', data, layout)
-
-        let total_rooms = cells.length;
-        let prices = cells.map(x => Number(x[6]));
-        let participants = cells.map(x => Number(x[7]));
-        let total_spent = prices.map((x, i) => x * participants[i]).reduce((a, b) => a + b);
-        let success_rate = cells.map(x => Number(x[9])).reduce((a, b) => a + b) / total_rooms;
-        document.getElementById("total-rooms").innerHTML = total_rooms;
-        document.getElementById("total-spent").innerHTML = "$" + total_spent;
-        document.getElementById("success-rate").innerHTML = (success_rate * 100).toFixed(2) + "%";
+        });
 
         $('#escape-table').DataTable({paging: false, 
                                       "order": [],
-                                      columnDefs: [ { type: 'date', 'targets': [2] } ],});
+                                      columnDefs: [ { type: 'date', 'targets': [2] } ],
+                                      searchDelay: 1000})
+
+        $(document).ready(function() {
+            $('#escape-table').DataTable().on('draw.customEvent', function() {
+            plot_rooms();
+         });
+        });
+        plot_rooms();
     </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
