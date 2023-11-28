@@ -526,8 +526,14 @@
             text: cells.map(x => x[1] + " | " + x[0] + " | " + x[2] + "<br>" + "$" + x[6]*x[7] + " | " + x[7] + " people | Challenge: " + x[8] + " | Success: " + x[9] + " | " + "Rating: " + x[10])
             }]
 
-            let max_bound = Math.max(Math.abs(lat_min-lat_max), Math.abs(lon_min-lon_max)) * 111
-            let zoom = 13.5 - Math.log2(max_bound)
+            let max_bound = Math.max(Math.abs(lat_min-lat_max), Math.abs(lon_min-lon_max)) * 111;
+            
+            var zoom;
+            if (max_bound == 0) {
+                zoom = 14;
+            } else {
+                zoom = 13.5 - (Math.log2(max_bound));
+            };
 
             var layout = {
             title: 'Completed Escape Rooms: Interactive Map',
