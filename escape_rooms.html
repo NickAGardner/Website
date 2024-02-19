@@ -586,7 +586,7 @@
             let total_spent = prices.map((x, i) => x * participants[i]).reduce((a, b) => a + b);
             let success_rate = cells.map(x => Number(x[9])).reduce((a, b) => a + b) / total_rooms;
             document.getElementById("total-rooms").innerHTML = total_rooms;
-            document.getElementById("total-spent").innerHTML = "$" + total_spent;
+            document.getElementById("total-spent").innerHTML = "$" + total_spent.toFixed(2);
             document.getElementById("success-rate").innerHTML = (success_rate * 100).toFixed(2) + "%";
         };
 
